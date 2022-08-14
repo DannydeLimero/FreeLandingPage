@@ -274,6 +274,7 @@ body {
                 padding: 66px 0 0 0;
                 opacity: 1;
                 transition: all 0.5s ease 0s;
+                
                 & a {
                     font-family: 'Gilroy-Bold';
                     font-size: 34px;
@@ -296,6 +297,9 @@ body {
             bottom: -35px;
             z-index: 2;
             &.active {
+                position: fixed;
+                top: 75px;
+                right: 20px;
                 background-image: url(../img/burger/esc.svg);
                 height: 23px;
                 width: 23px;
