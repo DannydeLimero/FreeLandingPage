@@ -263,12 +263,43 @@ body {
         &__row {
             display: none;
             &.active {
-                display: block;
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                background-color: #F6F6F6;
+                z-index: 1;
+                padding: 66px 0 0 0;
+                & a {
+                    font-family: 'Gilroy-Bold';
+                    font-size: 34px;
+                    line-height: 42px;
+                    color: #828282;
+                    &:not(:last-child) {
+                        margin: 0 0 68px 0;
+                    }
+                    &:active {
+                        font-family: 'Gilroy-Bold';
+                        font-size: 34px;
+                        line-height: 42px;
+                        color: #070707;
+                    }
+                }
             }
         }
         &__burger {
             display: block;
             bottom: -35px;
+            z-index: 2;
+            &.active {
+                background-image: url(../img/burger/esc.svg);
+                height: 23px;
+                width: 23px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                & img {
+                    display: none;
+                }
+            }
         }
     }
     .slider__item {
