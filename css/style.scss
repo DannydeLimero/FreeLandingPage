@@ -40,20 +40,17 @@ body {
         cursor: pointer;
     }
 }
-
 .title {
     font-family: 'Gilroy-Bold';
     font-size: 34px;
     line-height: 42px;
     color: #070707;
 }
-
 .subtitle {
     font-size: 18px;
     line-height: 22px;
     color: #070707;
 }
-
 .main {
     &__row {
         display: flex;
@@ -106,7 +103,6 @@ body {
         width: 100%;
     }
 }
-
 .about {
     &__wrap {
         background-color: #F6F6F6;
@@ -122,7 +118,6 @@ body {
         }
     }
 }
-
 .skills {
     &__content {
         background-color: #fff;
@@ -159,13 +154,11 @@ body {
         } 
     }
 }
-
 .stars {
     & img:not(:last-child) {
         margin-right: 9px;
     }
 }
-
 .portfolio {
     &__wrap {
         background-color: #F6F6F6;
@@ -194,7 +187,6 @@ body {
         }
     }
 }
-
 .contacts {
     &__content {
         text-align: center;
@@ -220,7 +212,6 @@ body {
             cursor: pointer;
         }
     }
-
     &__social {
         margin: 86px 0 46px 0;
         & a:not(:last-child) {
@@ -228,12 +219,10 @@ body {
         }
     }
 }
-
 /* Лента слайдов */
 .slick-track{
     display: flex;
 }
-
 .slider__item {
     text-align: center;
     opacity: 0;
@@ -242,7 +231,6 @@ body {
 .slider__item.slick-active {
     opacity: 1;
 }
-
 .slider {
     min-width: 100%;
     overflow: hidden;
@@ -258,14 +246,14 @@ body {
     .head {
         position: relative;
         border-bottom: none;
-        height: 65px;
-        padding: 0;
+        padding: 65px 0 0 0;
         &__row {
             position: absolute;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: start;
             height: 100%;
+            width: 100%;
             top: -350%;
             opacity: 0;
             transition: all 0.5s ease 0s;
