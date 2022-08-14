@@ -241,6 +241,9 @@ body {
 
 /*boogie*/
 @media (max-width: 767px) {
+  body.active {
+    overflow: hidden;
+  }
   .head {
     display: flex;
     justify-content: space-between;
@@ -250,24 +253,35 @@ body {
     padding: 0;
   }
   .head__row {
-    display: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    top: -100%;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .head__row a {
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+    line-height: 42px;
+    color: #828282;
   }
   .head__row.active {
     position: fixed;
-    display: flex;
-    flex-direction: column;
     background-color: #F6F6F6;
     z-index: 1;
+    top: 0;
     padding: 66px 0 0 0;
+    opacity: 1;
+    transition: all 0.3s ease 0s;
   }
   .head__row.active a {
     font-family: "Gilroy-Bold";
     font-size: 34px;
     line-height: 42px;
     color: #828282;
-  }
-  .head__row.active a:not(:last-child) {
-    margin: 0 0 68px 0;
   }
   .head__row.active a:active {
     font-family: "Gilroy-Bold";
@@ -285,6 +299,7 @@ body {
     height: 23px;
     width: 23px;
     background-size: cover;
+    background-position: center;
   }
   .head__burger.active img {
     display: none;
