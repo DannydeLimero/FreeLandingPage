@@ -12,6 +12,7 @@ body {
 }
 
 .head {
+  position: relative;
   background-color: #fff;
   padding: 32px 0;
   border-bottom: 1px solid #828282;
@@ -33,6 +34,12 @@ body {
   line-height: 22px;
   color: #070707;
 }
+.head__burger {
+  display: none;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
 
 .title {
   font-family: "Gilroy-Bold";
@@ -47,14 +54,11 @@ body {
   color: #070707;
 }
 
-.main {
-  padding: 40px 0 104px 0;
-}
 .main__row {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-bottom: 50px;
+  padding-bottom: 40px 0 50px 0;
 }
 .main__row h1 {
   font-family: "Gilroy-Bold";
@@ -174,7 +178,7 @@ body {
   margin: 45px 0 0 0;
 }
 .portfolio__content img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .contacts__content {
@@ -226,4 +230,53 @@ body {
 .slider {
   min-width: 100%;
   overflow: hidden;
+  padding-bottom: 104px;
+}
+
+/*boogie*/
+@media (max-width: 767px) {
+  .head {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    border-bottom: none;
+    height: 65px;
+    padding: 0;
+  }
+  .head__row {
+    display: none;
+  }
+  .head__row .active {
+    display: block;
+  }
+  .head__burger {
+    display: block;
+    bottom: -35px;
+  }
+  .slider__item {
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .slider__item img {
+    height: 100%;
+  }
+  .main__language {
+    display: none;
+  }
+  .main__row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0 37px 0;
+  }
+  .main__row h1 {
+    font-size: 47px;
+    line-height: 58px;
+    margin: 0 0 23px 0;
+  }
+  .skills__row {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */

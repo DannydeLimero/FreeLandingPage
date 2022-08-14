@@ -11,6 +11,7 @@ body {
 }
 
 .head {
+    position: relative;
     background-color: #fff;
     padding: 32px 0;
     border-bottom: 1px solid #828282;;
@@ -31,8 +32,19 @@ body {
             }
         }
     }
+    //----------------------------BURGER
+    &__burger {
+        display: none;
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+    }
 }
 
+
+
+
+//---------------------------------------
 .title {
     font-family: 'Gilroy-Bold';
     font-size: 34px;
@@ -47,12 +59,11 @@ body {
 }
 
 .main {
-    padding: 40px 0 104px 0;
     &__row {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        padding-bottom: 50px;
+        padding-bottom: 40px 0 50px 0;
         & h1 {
             font-family: 'Gilroy-Bold';
             font-size: 47.3392px;
@@ -101,11 +112,9 @@ body {
 }
 
 .about {
-
     &__wrap {
         background-color: #F6F6F6;
     }
-
     &__content {
         padding: 120px 0 107px 0;
         text-align: center;
@@ -119,7 +128,6 @@ body {
 }
 
 .skills {
-
     &__content {
         background-color: #fff;
         text-align: center;
@@ -128,13 +136,11 @@ body {
             margin-bottom: 69px;
         }
     }
-
     &__row {
         display: flex;
         justify-content: space-between;
         padding-bottom: 110px;
     }
-
     &__box {
         display: flex;
         flex-direction: column;
@@ -161,11 +167,9 @@ body {
 }
 
 .portfolio {
-
     &__wrap {
         background-color: #F6F6F6;
     }
-
     &__content {
         text-align: center;
         padding: 113px 0 96px 0;
@@ -186,13 +190,12 @@ body {
             margin: 45px 0 0 0;
         }
         & img {
-            width: 100%;
+           max-width: 100%;
         }
     }
 }
 
 .contacts {
-
     &__content {
         text-align: center;
         padding: 114px 0 123px 0;
@@ -234,7 +237,7 @@ body {
 .slider__item {
     text-align: center;
     opacity: 0;
-    transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;  
 }
 .slider__item.slick-active {
     opacity: 1;
@@ -243,6 +246,58 @@ body {
 .slider {
     min-width: 100%;
     overflow: hidden;
+    padding-bottom: 104px;
 }
 
 /*boogie*/
+
+@media (max-width:767px) {
+    .head {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        border-bottom: none;
+        height: 65px;
+        padding: 0;
+        &__row {
+            display: none;
+            & .active {
+                display: block;
+            }
+        }
+        &__burger {
+            display: block;
+            bottom: -35px;
+        }
+    }
+    .slider__item {
+        text-align: center;
+        opacity: 0;
+        transition: all 0.3s ease 0s;
+        & img {
+            height: 100%;
+        }
+    }
+    .main {
+        &__language {
+            display: none;
+        }
+        &__row {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 0 37px 0;
+            & h1 {
+                font-size: 47px;
+                line-height: 58px;
+                margin: 0 0 23px 0;
+            }
+        }
+    }
+    .skills {
+        &__row {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
