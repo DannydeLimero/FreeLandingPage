@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-    width: 910px;
+    max-width: 910px;
     margin: 0 auto;
     padding: 0 15px;
     height: 100%;
@@ -14,8 +14,10 @@ body {
     position: relative;
     background-color: #fff;
     padding: 32px 0;
-    border-bottom: 1px solid #828282;;
+    border-bottom: 1px solid #828282;
+    width: 100%;
     &__row {
+        width: 100%;
         background-color: #fff;
         display: flex;
         justify-content: space-between;
@@ -32,7 +34,6 @@ body {
             }
         }
     }
-    //----------------------------BURGER
     &__burger {
         display: none;
         position: absolute;
@@ -41,10 +42,6 @@ body {
     }
 }
 
-
-
-
-//---------------------------------------
 .title {
     font-family: 'Gilroy-Bold';
     font-size: 34px;
@@ -140,6 +137,10 @@ body {
         display: flex;
         justify-content: space-between;
         padding-bottom: 110px;
+    }
+    &__column {
+        display: flex;
+        flex: 0 1 50%;
     }
     &__box {
         display: flex;
@@ -261,7 +262,7 @@ body {
         padding: 0;
         &__row {
             display: none;
-            & .active {
+            &.active {
                 display: block;
             }
         }
@@ -296,6 +297,24 @@ body {
     }
     .skills {
         &__row {
+            display: flex;
+        }
+        &__column {
+            display: flex;
+            flex-direction: column;
+        }
+        &__box {
+        }
+    }
+}
+
+@media (max-width:374px) {
+    .skills {
+        &__row {
+            display: flex;
+            flex-direction: column;
+        }
+        &__column {
             display: flex;
             flex-direction: column;
         }
