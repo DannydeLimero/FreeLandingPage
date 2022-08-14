@@ -285,7 +285,6 @@ body {
     height: 23px;
     width: 23px;
     background-size: cover;
-    background-repeat: no-repeat;
   }
   .head__burger.active img {
     display: none;
@@ -320,7 +319,7 @@ body {
     flex-direction: column;
   }
 }
-@media (max-width: 374px) {
+@media (max-width: 375px) {
   .skills__row {
     display: flex;
     flex-direction: column;

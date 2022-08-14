@@ -295,7 +295,6 @@ body {
                 height: 23px;
                 width: 23px;
                 background-size: cover;
-                background-repeat: no-repeat;
                 & img {
                     display: none;
                 }
@@ -339,7 +338,7 @@ body {
     }
 }
 
-@media (max-width:374px) {
+@media (max-width:375px) {
     .skills {
         &__row {
             display: flex;
