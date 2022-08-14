@@ -2,14 +2,12 @@ body {
     height: 100%;
     font-family: 'Gilroy-Medium';
 }
-
 .container {
     max-width: 910px;
     margin: 0 auto;
     padding: 0 15px;
     height: 100%;
 }
-
 .head {
     background-color: #fff;
     padding: 32px 0;
@@ -343,11 +341,8 @@ body {
             display: flex;
             flex-direction: column;
         }
-        &__box {
-        }
     }
 }
-
 @media (max-width:375px) {
     .skills {
         &__row {
