@@ -80,12 +80,6 @@ body {
   align-self: baseline;
   margin-top: 75px;
 }
-.main__language a {
-  font-family: "Gilroy-Bold";
-  font-size: 16px;
-  line-height: 20px;
-  color: #070707;
-}
 .main__language a:hover {
   font-family: "Gilroy-Bold";
   font-size: 16px;
@@ -108,11 +102,42 @@ body {
   width: 100%;
 }
 
-.unactive {
+.ENG {
   font-family: "Gilroy-Bold";
   font-size: 16px;
   line-height: 20px;
   color: #828282;
+}
+.ENG.unactive {
+  font-family: "Gilroy-Bold";
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+}
+.ENG.active-lang {
+  font-family: "Gilroy-Bold";
+  font-size: 16px;
+  line-height: 20px;
+  color: #070707;
+}
+
+.RU {
+  font-family: "Gilroy-Bold";
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+}
+.RU.unactive {
+  font-family: "Gilroy-Bold";
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+}
+.RU.active-lang {
+  font-family: "Gilroy-Bold";
+  font-size: 16px;
+  line-height: 20px;
+  color: #070707;
 }
 
 .about__wrap {

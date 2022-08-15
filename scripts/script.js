@@ -14,6 +14,17 @@ $(document).ready(function() {
     $('.head__burger').click(function(event) {
         $('.head__burger,.head__row,.head__language').toggleClass('active');
         $('body').toggleClass('lock');
-        $('.ENG').toggleClass('unactive');
+    });
+    $('.RU').click(function(event) {
+        $('.ENG').removeClass('active-lang');
+    });
+    $('.RU').click(function(event) {
+        $('.RU').toggleClass('active-lang');
+    });
+    $('.ENG').click(function(event) {
+        $('.RU').removeClass('active-lang');
+    });
+    $('.ENG').click(function(event) {
+        $('.ENG').toggleClass('active-lang');
     });
 });
