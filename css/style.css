@@ -38,35 +38,6 @@ body {
 .head-language {
   display: none;
 }
-.head-language.active {
-  transform: rotate(-90deg);
-  align-self: baseline;
-  margin-top: 75px;
-}
-.head-language.active a {
-  font-family: "Gilroy-Bold";
-  font-size: 16px;
-  line-height: 20px;
-  color: #828282;
-}
-.head-language.active a:hover {
-  font-family: "Gilroy-Bold";
-  font-size: 16px;
-  line-height: 20px;
-  color: #070707;
-}
-.head-language.active a:active {
-  font-family: "Gilroy-Bold";
-  font-size: 18px;
-  line-height: 22px;
-  color: #070707;
-}
-.head-language.active span {
-  font-family: "Gilroy-Bold";
-  font-size: 16px;
-  line-height: 20px;
-  color: #828282;
-}
 .head__burger {
   display: none;
   position: absolute;

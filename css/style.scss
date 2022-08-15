@@ -33,35 +33,6 @@ body {
     }
     &-language {
         display: none;
-        &.active {
-            transform: rotate(-90deg);
-            align-self: baseline;
-            margin-top: 75px;
-            & a {
-                font-family: 'Gilroy-Bold';
-                font-size: 16px;
-                line-height: 20px;
-                color: #828282;
-                &:hover {
-                    font-family: 'Gilroy-Bold';
-                    font-size: 16px;
-                    line-height: 20px;
-                    color: #070707;
-                }
-                &:active {
-                    font-family: 'Gilroy-Bold';
-                    font-size: 18px;
-                    line-height: 22px;
-                    color: #070707;
-                }
-            }
-            & span {
-                font-family: 'Gilroy-Bold';
-                font-size: 16px;
-                line-height: 20px;
-                color: #828282;
-            }
-        }
     }
     &__burger {
         display: none;
