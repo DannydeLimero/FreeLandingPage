@@ -76,7 +76,6 @@ body {
   color: #070707;
 }
 .main__language {
-  opacity: 0;
   transform: rotate(-90deg);
   align-self: baseline;
   margin-top: 75px;
