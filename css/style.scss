@@ -283,28 +283,26 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: start;
+            background-color: #fff;
             height: 100%;
             width: 100%;
-            top: -390%;
-            opacity: 0;
-            transition: all 0.5s ease 0s;
-            &:not(:last-child) {
-                margin: 0 0 68px 0;
-            }
+            top: -850%;
+            transition: all 0.75s ease 0s;
             & a {
                 font-family: 'Gilroy-Bold';
                 font-size: 34px;
                 line-height: 42px;
                 color: #828282;
+                &:not(:last-child) {
+                    margin: 0 0 68px 0;
+                }
             }
             &.active {
                 position: fixed;
                 background-color: #fff;
                 z-index: 1;
-                top: 0;
-                padding: 66px 0 0 0;
-                opacity: 1;
-                transition: all 0.5s ease 0s;
+                top: 65px;
+                transition: all 0.75s ease 0s;
                 & a {
                     font-family: 'Gilroy-Bold';
                     font-size: 34px;
@@ -321,15 +319,26 @@ body {
                     }
                 }
             }
-            &-language.active {
-                position: fixed;
+            &-language {
+                display: none;
                 bottom: 100px;
                 right: 15px;
                 transform: rotate(90deg);
                 align-self: baseline;
                 margin-top: 75px;
-                opacity: 1;
+                opacity: 0;
                 transition: all 0.75s ease 0s;
+                &.active {
+                    position: absolute;
+                    display: block;
+                    bottom: 170px;
+                    right: 0;
+                    transform: rotate(90deg);
+                    align-self: baseline;
+                    margin-top: 75px;
+                    opacity: 1;
+                    transition: all 0.75s ease 0s;
+                }
                 & a {
                     font-family: 'Gilroy-Bold';
                     font-size: 34px;
@@ -337,8 +346,8 @@ body {
                     color: #828282;
                     &:active {
                         font-family: 'Gilroy-Bold';
-                    font-size: 34px;
-                    line-height: 42px;
+                        font-size: 34px;
+                        line-height: 42px;
                         color: #070707;
                     }
                 }
@@ -349,6 +358,7 @@ body {
                     color: #828282;
                 }
             }
+            
         }
         &__burger {
             display: block;
