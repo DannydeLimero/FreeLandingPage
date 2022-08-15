@@ -21,18 +21,18 @@ body {
         display: flex;
         justify-content: space-between;
     }
-    & a {
-        font-family: 'Gilroy-Bold';
-        font-size: 18px;
-        line-height: 22px;
-        color: #828282;
-    }
-    &__item a {
-        &:hover {
+    &__item {
+        & a {
             font-family: 'Gilroy-Bold';
             font-size: 18px;
             line-height: 22px;
-            color: #070707;
+            color: #828282;
+            &:hover {
+                font-family: 'Gilroy-Bold';
+                font-size: 18px;
+                line-height: 22px;
+                color: #070707;
+            }
         }
     }
     &__language {
@@ -73,7 +73,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        padding-bottom: 40px 0 50px 0;
+        padding: 40px 0 50px 0;
         & h1 {
             font-family: 'Gilroy-Bold';
             font-size: 47.3392px;
@@ -279,8 +279,10 @@ body {
 /*boogie*/
 
 @media (max-width:767px) {
-    body.lock {
-        overflow: hidden;
+    body {
+        &.lock {
+            overflow: hidden;
+        }
     }
     .head {
         position: relative;
@@ -291,17 +293,11 @@ body {
             background-color: #fff;
             height: 100%;
             width: 100%;
-            top: -150%;
+            top: -200%;
             left: 0;
             transition: all 0.75s ease 0s;
             z-index: 2;
             padding: 65px 0 0 26px;
-            & a {
-                font-family: 'Gilroy-Bold';
-                font-size: 34px;
-                line-height: 42px;
-                color: #828282;
-            }
             &.active {
                 position: fixed;
                 background-color: #fff;
@@ -339,6 +335,24 @@ body {
             justify-content: start;
         }
         &__item {
+            & a {
+                font-family: 'Gilroy-Bold';
+                font-size: 34px;
+                line-height: 42px;
+                color: #828282;
+                &:hover {
+                    font-family: 'Gilroy-Bold';
+                    font-size: 34px;
+                    line-height: 42px;
+                    color: #828282;
+                }
+                &:active {
+                    font-family: 'Gilroy-Bold';
+                    font-size: 34px;
+                    line-height: 42px;
+                    color: #070707;
+                }
+            }
             &:not(:last-child) {
                 margin: 0 0 68px 0;
             }

@@ -23,7 +23,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.head a {
+.head__item a {
   font-family: "Gilroy-Bold";
   font-size: 18px;
   line-height: 22px;
@@ -74,7 +74,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-bottom: 40px 0 50px 0;
+  padding: 40px 0 50px 0;
 }
 .main__row h1 {
   font-family: "Gilroy-Bold";
@@ -286,17 +286,11 @@ body {
     background-color: #fff;
     height: 100%;
     width: 100%;
-    top: -150%;
+    top: -200%;
     left: 0;
     transition: all 0.75s ease 0s;
     z-index: 2;
     padding: 65px 0 0 26px;
-  }
-  .head__row a {
-    font-family: "Gilroy-Bold";
-    font-size: 34px;
-    line-height: 42px;
-    color: #828282;
   }
   .head__row.active {
     position: fixed;
@@ -331,6 +325,24 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: start;
+  }
+  .head__item a {
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+    line-height: 42px;
+    color: #828282;
+  }
+  .head__item a:hover {
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+    line-height: 42px;
+    color: #828282;
+  }
+  .head__item a:active {
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+    line-height: 42px;
+    color: #070707;
   }
   .head__item:not(:last-child) {
     margin: 0 0 68px 0;
