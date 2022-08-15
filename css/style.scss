@@ -80,7 +80,7 @@ body {
             font-family: 'Gilroy-Bold';
             font-size: 16px;
             line-height: 20px;
-            color: #828282;
+            color: #070707;
             &:hover {
                 font-family: 'Gilroy-Bold';
                 font-size: 16px;
@@ -89,8 +89,8 @@ body {
             }
             &:active {
                 font-family: 'Gilroy-Bold';
-                font-size: 18px;
-                line-height: 22px;
+                font-size: 16px;
+                line-height: 20px;
                 color: #070707;
             }
         }
@@ -105,6 +105,14 @@ body {
         width: 100%;
     }
 }
+
+.unactive {
+    font-family: 'Gilroy-Bold';
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+}
+
 .about {
     &__wrap {
         background-color: #F6F6F6;
@@ -268,7 +276,7 @@ body {
             left: 0;
             transition: all 0.75s ease 0s;
             z-index: 2;
-            padding: 0 0 0 26px;
+            padding: 65px 0 0 26px;
             & a {
                 font-family: 'Gilroy-Bold';
                 font-size: 34px;
@@ -437,7 +445,7 @@ body {
         }
     }
 }
-@media (max-width:390px) {
+@media (max-width:375px) {
     .skills {
         &__row {
             display: flex;

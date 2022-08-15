@@ -14,5 +14,6 @@ $(document).ready(function() {
     $('.head__burger').click(function(event) {
         $('.head__burger,.head__row,.head__language').toggleClass('active');
         $('body').toggleClass('lock');
+        $('.ENG').toggleClass('unactive');
     });
 });
