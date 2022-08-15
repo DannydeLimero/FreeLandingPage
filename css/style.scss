@@ -217,9 +217,19 @@ body {
         }
     }
     &__social {
-        margin: 86px 0 46px 0;
-        & a:not(:last-child) {
+        display: flex;
+        justify-content: center;
+        padding: 86px 0 46px 0;
+    }
+    &__column {
+        &:not(:last-child) {
             margin-right: 61px;
+        }
+    }
+    &__list {
+        display: flex;
+        & li:not(:last-child) {
+            margin-right: 61px; 
         }
     }
 }
@@ -429,7 +439,7 @@ body {
         }
     }
 }
-@media (max-width:375px) {
+@media (max-width:390px) {
     .skills {
         &__row {
             display: flex;
@@ -439,5 +449,18 @@ body {
             display: flex;
             flex-direction: column;
         }
+    }
+    .contacts {
+		&__social {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+		}
+		&__column {
+            &:not(:last-child) {
+                padding: 0 0 20px 0;
+                margin: 0;
+            }
+		}
     }
 }

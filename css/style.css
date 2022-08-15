@@ -215,9 +215,17 @@ body {
   cursor: pointer;
 }
 .contacts__social {
-  margin: 86px 0 46px 0;
+  display: flex;
+  justify-content: center;
+  padding: 86px 0 46px 0;
 }
-.contacts__social a:not(:last-child) {
+.contacts__column:not(:last-child) {
+  margin-right: 61px;
+}
+.contacts__list {
+  display: flex;
+}
+.contacts__list li:not(:last-child) {
   margin-right: 61px;
 }
 
@@ -422,7 +430,7 @@ body {
     flex-direction: column;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 390px) {
   .skills__row {
     display: flex;
     flex-direction: column;
@@ -430,5 +438,14 @@ body {
   .skills__column {
     display: flex;
     flex-direction: column;
+  }
+  .contacts__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacts__column:not(:last-child) {
+    padding: 0 0 20px 0;
+    margin: 0;
   }
 }/*# sourceMappingURL=style.css.map */
