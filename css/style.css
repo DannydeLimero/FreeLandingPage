@@ -35,7 +35,7 @@ body {
   line-height: 22px;
   color: #070707;
 }
-.head-language {
+.head__row-language {
   display: none;
 }
 .head__burger {
@@ -302,6 +302,7 @@ body {
     color: #070707;
   }
   .head__row-language {
+    display: block;
     position: absolute;
     bottom: 100px;
     right: 15px;

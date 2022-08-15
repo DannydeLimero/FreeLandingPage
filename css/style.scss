@@ -30,9 +30,9 @@ body {
                 color: #070707;
             }
         }
-    }
-    &-language {
-        display: none;
+        &-language {
+            display: none;
+        }
     }
     &__burger {
         display: none;
@@ -298,6 +298,7 @@ body {
                 }
             }
             &-language {
+                display: block;
                 position: absolute;
                 bottom: 100px;
                 right: 15px;
