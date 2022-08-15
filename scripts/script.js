@@ -13,18 +13,30 @@ $(document).ready(function() {
     });
     $('.head__burger').click(function(event) {
         $('.head__burger,.head__row,.head__language').toggleClass('active');
-        $('body').toggleClass('lock');
+        $('body').addClass('lock');
     });
-    $('.RU').click(function(event) {
-        $('.ENG').removeClass('active-lang');
+    $('.head__ru').click(function(event) {
+        $('.head__eng').removeClass('active');
     });
-    $('.RU').click(function(event) {
-        $('.RU').toggleClass('active-lang');
+    $('.head__ru').click(function(event) {
+        $('.head__ru').addClass('active');
     });
-    $('.ENG').click(function(event) {
-        $('.RU').removeClass('active-lang');
+    $('.head__eng').click(function(event) {
+        $('.head__ru').removeClass('active');
     });
-    $('.ENG').click(function(event) {
-        $('.ENG').toggleClass('active-lang');
+    $('.head__eng').click(function(event) {
+        $('.head__eng').addClass('active');
+    });
+    $('.main__ru').click(function(event) {
+        $('.main__eng').removeClass('active');
+    });
+    $('.main__ru').click(function(event) {
+        $('.main__ru').addClass('active');
+    });
+    $('.main__eng').click(function(event) {
+        $('.main__ru').removeClass('active');
+    });
+    $('.main__eng').click(function(event) {
+        $('.main__eng').addClass('active');
     });
 });
