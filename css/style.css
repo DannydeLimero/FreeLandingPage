@@ -17,25 +17,25 @@ body {
   border-bottom: 1px solid #828282;
   width: 100%;
 }
-.head__row-list {
+.head__list {
   width: 100%;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
 }
-.head__row a {
+.head a {
   font-family: "Gilroy-Bold";
   font-size: 18px;
   line-height: 22px;
   color: #828282;
 }
-.head__row a:hover {
+.head a:hover {
   font-family: "Gilroy-Bold";
   font-size: 18px;
   line-height: 22px;
   color: #070707;
 }
-.head__row-language {
+.head__language {
   display: none;
 }
 .head__burger {
@@ -271,14 +271,6 @@ body {
     z-index: 2;
     padding: 0 0 0 26px;
   }
-  .head__row-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-  }
-  .head__row-item:not(:last-child) {
-    margin: 0 0 68px 0;
-  }
   .head__row a {
     font-family: "Gilroy-Bold";
     font-size: 34px;
@@ -311,45 +303,6 @@ body {
     line-height: 42px;
     color: #070707;
   }
-  .head__row-language {
-    display: block;
-    position: absolute;
-    bottom: 100px;
-    right: 15px;
-    transform: rotate(90deg);
-    align-self: baseline;
-    opacity: 0;
-    transition: all 0.75s ease 0s;
-  }
-  .head__row-language.active {
-    position: absolute;
-    display: block;
-    bottom: 170px;
-    right: 0;
-    transform: rotate(90deg);
-    align-self: baseline;
-    margin-top: 75px;
-    opacity: 1;
-    transition: all 0.75s ease 0s;
-  }
-  .head__row-language a {
-    font-family: "Gilroy-Bold";
-    font-size: 34px;
-    line-height: 42px;
-    color: #828282;
-  }
-  .head__row-language a:active {
-    font-family: "Gilroy-Bold";
-    font-size: 34px;
-    line-height: 42px;
-    color: #070707;
-  }
-  .head__row-language span {
-    font-family: "Gilroy-Bold";
-    font-size: 34px;
-    line-height: 42px;
-    color: #828282;
-  }
   .head__burger {
     display: block;
     bottom: -35px;
@@ -367,6 +320,53 @@ body {
   }
   .head__burger.active img {
     display: none;
+  }
+  .head__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .head__item:not(:last-child) {
+    margin: 0 0 68px 0;
+  }
+  .head__language {
+    display: block;
+    position: absolute;
+    bottom: 100px;
+    right: 15px;
+    transform: rotate(90deg);
+    align-self: baseline;
+    opacity: 0;
+    transition: all 0.75s ease 0s;
+  }
+  .head__language.active {
+    position: absolute;
+    display: block;
+    bottom: 170px;
+    right: 0;
+    transform: rotate(90deg);
+    align-self: baseline;
+    margin-top: 75px;
+    opacity: 1;
+    transition: all 0.75s ease 0s;
+  }
+  .head__language a {
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+    line-height: 42px;
+    color: #828282;
+  }
+  .head__language a:active {
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+    line-height: 42px;
+    color: #070707;
+  }
+  .head__language span {
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+    line-height: 42px;
+    color: #828282;
   }
   .slider__item {
     text-align: center;
