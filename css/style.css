@@ -17,7 +17,7 @@ body {
   border-bottom: 1px solid #828282;
   width: 100%;
 }
-.head__row {
+.head__row-list {
   width: 100%;
   background-color: #fff;
   display: flex;
@@ -254,9 +254,6 @@ body {
   }
   .head__row {
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
     background-color: #fff;
     height: 100%;
     width: 100%;
@@ -266,14 +263,19 @@ body {
     z-index: 2;
     padding: 0 0 0 26px;
   }
+  .head__row-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .head__row-item:not(:last-child) {
+    margin: 0 0 68px 0;
+  }
   .head__row a {
     font-family: "Gilroy-Bold";
     font-size: 34px;
     line-height: 42px;
     color: #828282;
-  }
-  .head__row a:not(:last-child) {
-    margin: 0 0 68px 0;
   }
   .head__row.active {
     position: fixed;
