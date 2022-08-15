@@ -252,7 +252,7 @@ body {
 
 /*boogie*/
 @media (max-width: 767px) {
-  body.lock {
+  body.active {
     overflow: hidden;
   }
   .head {

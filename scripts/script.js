@@ -12,7 +12,7 @@ $(document).ready(function() {
         infinite:true,
     });
     $('.head__burger').click(function(event) {
-        $('.head__burger,.head__row,.head__language').toggleClass('active');
-        $('body').toggleClass('lock');
+        $('.head__burger,.head__row,.head__language,body').toggleClass('active');
+        
     });
 });
