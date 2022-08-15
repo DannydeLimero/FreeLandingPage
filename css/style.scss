@@ -320,21 +320,7 @@ body {
                 left: 0;
                 transition: all 0.75s ease 0s;
                 padding: 0 0 0 26px;
-                & a {
-                    font-family: 'Gilroy-Bold';
-                    font-size: 34px;
-                    line-height: 42px;
-                    color: #828282;
-                    &:not(:last-child) {
-                        margin: 0 0 68px 0;
-                    }
-                    &:active {
-                        font-family: 'Gilroy-Bold';
-                        font-size: 34px;
-                        line-height: 42px;
-                        color: #070707;
-                    }
-                }
+                
             }
         }
         &__burger {
@@ -420,25 +406,6 @@ body {
                 transform: rotate(-90deg);
                 align-self: baseline;
                 margin-top: 75px;
-                & a {
-                    font-family: 'Gilroy-Bold';
-                    font-size: 16px;
-                    line-height: 20px;
-                    color: #828282;
-                    &:hover {
-                        font-family: 'Gilroy-Bold';
-                        font-size: 16px;
-                        line-height: 20px;
-                        color: #070707;
-                    }
-                    &:active {
-                        font-family: 'Gilroy-Bold';
-                        font-size: 18px;
-                        line-height: 22px;
-                        color: #070707;
-                        
-                    }
-                }
                 & span {
                     font-family: 'Gilroy-Bold';
                     font-size: 16px;
@@ -495,5 +462,42 @@ body {
                 margin: 0;
             }
 		}
+    }
+    .ENG {
+        font-family: 'Gilroy-Bold';
+        font-size: 34px;
+        line-height: 42px;
+        color: #828282;
+        &.unactive {
+            font-family: 'Gilroy-Bold';
+            font-size: 34px;
+            line-height: 42px;
+            color: #828282;
+        }
+        &.active-lang {
+            font-family: 'Gilroy-Bold';
+            font-size: 34px;
+            line-height: 42px;
+            color: #070707;
+        }
+    }
+    
+    .RU {
+        font-family: 'Gilroy-Bold';
+        font-size: 34px;
+        line-height: 42px;
+        color: #828282;
+        &.unactive {
+            font-family: 'Gilroy-Bold';
+            font-size: 34px;
+            line-height: 42px;
+            color: #828282;
+        }
+        &.active-lang {
+            font-family: 'Gilroy-Bold';
+            font-size: 34px;
+            line-height: 42px;
+            color: #070707;
+        }
     }
 }

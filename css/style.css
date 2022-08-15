@@ -319,21 +319,6 @@ body {
     transition: all 0.75s ease 0s;
     padding: 0 0 0 26px;
   }
-  .head__row.active a {
-    font-family: "Gilroy-Bold";
-    font-size: 34px;
-    line-height: 42px;
-    color: #828282;
-  }
-  .head__row.active a:not(:last-child) {
-    margin: 0 0 68px 0;
-  }
-  .head__row.active a:active {
-    font-family: "Gilroy-Bold";
-    font-size: 34px;
-    line-height: 42px;
-    color: #070707;
-  }
   .head__burger {
     display: block;
     bottom: -35px;
@@ -415,24 +400,6 @@ body {
     align-self: baseline;
     margin-top: 75px;
   }
-  .main__language.active a {
-    font-family: "Gilroy-Bold";
-    font-size: 16px;
-    line-height: 20px;
-    color: #828282;
-  }
-  .main__language.active a:hover {
-    font-family: "Gilroy-Bold";
-    font-size: 16px;
-    line-height: 20px;
-    color: #070707;
-  }
-  .main__language.active a:active {
-    font-family: "Gilroy-Bold";
-    font-size: 18px;
-    line-height: 22px;
-    color: #070707;
-  }
   .main__language.active span {
     font-family: "Gilroy-Bold";
     font-size: 16px;
@@ -478,5 +445,41 @@ body {
   .contacts__column:not(:last-child) {
     padding: 0 0 20px 0;
     margin: 0;
+  }
+  .ENG {
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+    line-height: 42px;
+    color: #828282;
+  }
+  .ENG.unactive {
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+    line-height: 42px;
+    color: #828282;
+  }
+  .ENG.active-lang {
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+    line-height: 42px;
+    color: #070707;
+  }
+  .RU {
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+    line-height: 42px;
+    color: #828282;
+  }
+  .RU.unactive {
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+    line-height: 42px;
+    color: #828282;
+  }
+  .RU.active-lang {
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+    line-height: 42px;
+    color: #070707;
   }
 }/*# sourceMappingURL=style.css.map */
