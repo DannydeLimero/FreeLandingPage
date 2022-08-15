@@ -279,15 +279,18 @@ body {
         border-bottom: none;
         padding: 65px 0 0 0;
         &__row {
-            position: absolute;
+            position: fixed;
             display: flex;
             flex-direction: column;
             justify-content: start;
             background-color: #fff;
             height: 100%;
             width: 100%;
-            top: -850%;
+            top: -100%;
+            left: 0;
             transition: all 0.75s ease 0s;
+            z-index: 2;
+            padding: 0 0 0 26px;
             & a {
                 font-family: 'Gilroy-Bold';
                 font-size: 34px;
@@ -300,9 +303,13 @@ body {
             &.active {
                 position: fixed;
                 background-color: #fff;
+                height: 100%;
+                width: 100%;
                 z-index: 1;
                 top: 65px;
+                left: 0;
                 transition: all 0.75s ease 0s;
+                padding: 0 0 0 26px;
                 & a {
                     font-family: 'Gilroy-Bold';
                     font-size: 34px;
@@ -320,12 +327,11 @@ body {
                 }
             }
             &-language {
-                display: none;
+                position: absolute;
                 bottom: 100px;
                 right: 15px;
                 transform: rotate(90deg);
                 align-self: baseline;
-                margin-top: 75px;
                 opacity: 0;
                 transition: all 0.75s ease 0s;
                 &.active {
@@ -431,6 +437,9 @@ body {
                 line-height: 58px;
                 margin: 0 0 23px 0;
             }
+        }
+        & img {
+            width: 99%;
         }
     }
     .skills {
