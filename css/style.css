@@ -279,6 +279,7 @@ body {
 @media (max-width: 767px) {
   .lock {
     overflow: hidden;
+    -webkit-overflow-scrolling: touch;
   }
   .head {
     position: relative;
