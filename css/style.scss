@@ -267,6 +267,9 @@ body {
     opacity: 0;
     transition: all 0.3s ease 0s;  
 }
+.mobile-img {
+    display: none;
+}
 .slider__item.slick-active {
     opacity: 1;
 }
@@ -275,9 +278,7 @@ body {
     overflow: hidden;
     padding-bottom: 104px;
 }
-
 /*boogie*/
-
 @media (max-width:767px) {
     body {
         &.lock {
@@ -400,9 +401,6 @@ body {
         text-align: center;
         opacity: 0;
         transition: all 0.3s ease 0s;
-        & img {
-            height: 100%;
-        }
     }
     .main {
         &__language {
@@ -431,6 +429,12 @@ body {
             display: flex;
             flex-direction: column;
         }
+    }
+    .mobile-img {
+        display: block;
+    }
+    .slider-img {
+        display: none;
     }
 }
 @media (max-width:375px) {
