@@ -298,14 +298,13 @@ body {
             left: 0;
             transition: all 0.75s ease 0s;
             z-index: 2;
-            padding: 65px 0 0 26px;
             &.active {
                 position: fixed;
                 background-color: #fff;
                 height: 100%;
                 width: 100%;
                 z-index: 1;
-                top: 65px;
+                top: 0;
                 left: 0;
                 transition: all 0.75s ease 0s;
                 padding: 65px 0 0 26px;
