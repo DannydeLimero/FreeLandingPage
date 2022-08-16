@@ -278,10 +278,8 @@ body {
 }
 /*boogie*/
 @media (max-width:767px) {
-    body {
-        &.lock {
-            overflow: hidden;
-        }
+    .lock {
+        overflow: hidden;
     }
     .head {
         position: relative;
