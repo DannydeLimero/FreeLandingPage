@@ -305,7 +305,7 @@ body {
     top: 65px;
     left: 0;
     transition: all 0.75s ease 0s;
-    padding: 0 0 0 26px;
+    padding: 65px 0 0 26px;
   }
   .head__burger {
     display: block;
@@ -336,13 +336,13 @@ body {
     line-height: 42px;
     color: #828282;
   }
-  .head__item a:hover {
+  .head__item a:active {
     font-family: "Gilroy-Bold";
     font-size: 34px;
     line-height: 42px;
-    color: #828282;
+    color: #070707;
   }
-  .head__item a:active {
+  .head__item a:hover {
     font-family: "Gilroy-Bold";
     font-size: 34px;
     line-height: 42px;
